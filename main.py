@@ -11,7 +11,7 @@ def financialData():
     finance = f.Extraccion()
     simbolos=finance.get_simbol_sp500()
     # print(finance.get_ShortInfo(simbolos))
-    info=finance.get_ShortInfo(simbolos[0:]) 
+    info=finance.get_ShortInfo(simbolos[0:15]) 
     return jsonify(info),200
 
 
